@@ -132,9 +132,16 @@ section h1 {
   box-shadow: 0 6px 25px rgba(0,0,0,0.3);
 }
 .reveal {
-  opacity: 1 !important;
-  transform: none !important;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
