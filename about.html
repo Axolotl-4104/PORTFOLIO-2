@@ -5,115 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Akshita</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Additional About Page Styles */
-    .about-section {
-      padding-top: 140px; /* space for fixed navbar */
-      background: linear-gradient(to bottom, #e6f0ff, #ffffff);
-      text-align: center;
-      min-height: 100vh;
-    }
-
-    .about-section h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: #555;
-      margin-bottom: 10px;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease;
-    }
-
-    .about-section h1.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .heading-underline {
-      width: 40px;
-      height: 3px;
-      background: #0a1f8f;
-      margin: 0 auto 20px;
-    }
-
-    .profile-pic {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    .profile-pic:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 25px rgba(0,0,0,0.3);
-    }
-
-    .about-boxes {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .about-box {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 100%;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease;
-    }
-
-    .about-box.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .about-box:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
-
-    .about-box h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: #0a1f8f;
-    }
-
-    .about-box p {
-      color: #555;
-      line-height: 1.6;
-      font-size: 1rem;
-    }
-
-    /* Resume button */
-    .resume-btn {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #0a1f8f;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      transition: all 0.3s ease;
-    }
-
-    .resume-btn:hover {
-      background: #07227a;
-      transform: scale(1.05);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-  </style>
 </head>
 <body>
 
@@ -131,8 +22,8 @@
   <!-- About Section -->
   <section class="about-section">
     <h1 class="reveal">About Me</h1>
-    <div class="heading-underline"></div>
-    <img src="akshita.png" alt="Akshita" class="profile-pic">
+    <div class="heading-underline reveal"></div>
+    <img src="akshita.png" alt="Akshita" class="profile-pic reveal">
 
     <div class="about-boxes">
       <div class="about-box reveal">
@@ -151,6 +42,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
